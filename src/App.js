@@ -1,10 +1,11 @@
 import './App.css';
-import User from "./utils/User";
 import Card from 'react-bootstrap/Card';
 import React from "react";
 import GetUser from "./utils/getUser";
+import {GetCar} from "./utils/getCar";
 
 function App() {
+
 
     return (
         <div className="App">
@@ -70,13 +71,22 @@ function App() {
                 <section className="workspace-bottom">
                     <div className="data-box">
                         <Card className="card-user">
-                            <GetUser/>
+                            <GetUser num={0}/>
                         </Card>
                         <Card className="card-user">
-                            <GetUser/>
+                            <GetUser num={1}/>
                         </Card>
                         <Card className="card-user">
-                            <GetUser/>
+                            <GetUser num={3}/>
+                        </Card>
+                        <Card className="card-car">
+                            <GetCar  num={0}/>
+                        </Card>
+                        <Card className="card-car">
+                            <GetCar  num={1}/>
+                        </Card>
+                        <Card className="card-car">
+                            <GetCar num={2}/>
                         </Card>
                     </div>
                 </section>

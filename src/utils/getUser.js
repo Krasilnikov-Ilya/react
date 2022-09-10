@@ -3,15 +3,19 @@ import User from "./User";
 import API from "./API";
 
 export class GetUser extends React.Component {
+
     constructor(props) {
         super(props);
         this.state = {
             isLoading: true,
             first_name: null,
             second_name: null,
-            id: null
+            sex: null,
+            age: null,
+            money: null
         };
     }
+
 
     render() {
         const {
@@ -22,8 +26,9 @@ export class GetUser extends React.Component {
     }
 
     async componentDidMount() {
-        let userData = await API.get('/');
-        userData = userData.data[25];
+        let userData = await API.get('/users');
+        let num = this.props.num;
+        userData = userData.data[num];
         console.log(userData);
         const id = `${userData.id} `
         const firstName = `${userData.firstName} `;

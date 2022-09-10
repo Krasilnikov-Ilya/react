@@ -6,7 +6,7 @@ class User extends React.Component {
         const { id, firstName, secondName, age, sex, money, isLoading } = this.props;
         const userDetails = (
             <div className="user-details">
-                <span className="id-id">ID:{id} </span>
+                <span className="id-user">ID:{id} </span>
                 <span> First name: {firstName}; </span>
                 <span> Last name: {secondName}; </span>
                 <span> Age: {age}; </span>

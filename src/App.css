@@ -137,11 +137,28 @@
     border-width:2px;
     border-style:solid;
     border-color:black;
+    text-align: left;
 }
+
+.card-car {
+    background-color: #242424;
+    margin: 1%;
+    border-radius: 12px;
+    padding: 12px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    text-align: left;
+}
+
 .user-details {
     display: inline-block;
     min-width: available;
 }
-.id-id {
+.id-user {
     color: crimson;
+}
+
+.id-car {
+    color: darkmagenta;
 }
